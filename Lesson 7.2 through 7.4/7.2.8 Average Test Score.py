@@ -1,6 +1,8 @@
-total = 0
-for i in range(3):
-    score = int(input("Enter a score: "))
-total = total + score
-average = total / 3.0
-print ("Average: " + str(average))
+t_s = 0
+
+for i in range(3):  
+    s = int(input("Enter score: "))  
+    t_s += s 
+
+a_s = t_s / 3  
+print("Average score:", a_s) 
