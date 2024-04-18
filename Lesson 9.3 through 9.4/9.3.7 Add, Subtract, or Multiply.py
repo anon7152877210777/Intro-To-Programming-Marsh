@@ -1,24 +1,23 @@
-def add(x, y):
-    return x + y
+num1 = int(input("What is the first number?: "))
+num2 = int(input("What is the second number?: "))
+def add():
+    sum = num1+num2
+    print(str(num1) + " + " +str(num2) + " = " + str(sum))
 
-def subtract(x, y):
-    return x - y
-
-def multiply(x, y):
-    return x * y
-
-num1 = float(input("Give me your first number: "))
-num2 = float(input("Give me your second number: "))
-op = operation = input("Choose an operation (add, subtract, multiply): ")
-
-if op == "add": 
-    final = add(num1, num2)
-    print(final)
-elif op == "subtract":
-    final = subtract(num1, num2)
-    print(final)
-elif op == "multiply":
-    final = multiply(num1, num2)
-    print(final)
+def subtract():
+    sum = num1-num2
+    print(str(num1) + " - " +str(num2) + " = " + str(sum))
+def multiply():
+    sum = num1*num2
+    print(str(num1) + " * " +str(num2) + " = " + str(sum))
+def invalid():
+    print("An invalid option was selected")
+op = str(input("Choose an operation (add, subtract, multiply): "))
+if(op=="add"):
+    add()
+elif(op=="subtract"):
+    subtract()
+elif(op=="multiply"):
+    multiply()
 else:
-    print("You have selected an invalid operation. Try again.")
+    invalid()
