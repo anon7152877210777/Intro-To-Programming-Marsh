@@ -1,0 +1,7 @@
+# update the function body to return the input `string` 
+# with the character at `index` replaced with a dash (-)
+def replace_at_index(string, index):
+    return string[:index] + "-" + string[index + 1:]
+
+print(replace_at_index("russland",3))
+print(replace_at_index("rus", 0))
